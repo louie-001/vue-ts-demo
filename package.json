@@ -1,7 +1,9 @@
 {
   "name": "vue-ts-template",
   "version": "0.1.0",
-  "private": true,
+  "private": false,
+  "description": "a TypeScript demo project",
+  "author": "github.com/louie-001",
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
@@ -9,15 +11,21 @@
   },
   "dependencies": {
     "core-js": "^2.6.5",
-    "vue": "^2.6.10"
+    "vue": "^2.6.10",
+    "vue-class-component": "^6.0.0",
+    "vue-property-decorator": "^7.0.0",
+    "vue-router": "^3.0.6"
   },
   "devDependencies": {
     "@vue/cli-plugin-babel": "^3.6.0",
     "@vue/cli-plugin-eslint": "^3.6.0",
     "@vue/cli-service": "^3.6.0",
+    "@vue/eslint-config-typescript": "^4.0.0",
     "babel-eslint": "^10.0.1",
     "eslint": "^5.16.0",
     "eslint-plugin-vue": "^5.0.0",
+    "typescript": "^3.2.1",
+    "vue-cli-plugin-typescript": "0.0.1",
     "vue-template-compiler": "^2.5.21"
   },
   "eslintConfig": {
@@ -27,11 +35,12 @@
     },
     "extends": [
       "plugin:vue/essential",
-      "eslint:recommended"
+      "eslint:recommended",
+      "@vue/typescript"
     ],
     "rules": {},
     "parserOptions": {
-      "parser": "babel-eslint"
+      "parser": "@typescript-eslint/parser"
     }
   },
   "postcss": {
