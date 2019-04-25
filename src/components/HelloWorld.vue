@@ -35,7 +35,6 @@ export default class HelloWorld extends Vue {
         return 10;
     }
 
-
 }
 </script>
 
